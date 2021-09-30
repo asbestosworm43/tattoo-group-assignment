@@ -1,0 +1,166 @@
+* {
+  font-family: 'prompt', sans-serif;
+}
+
+body {
+  margin: 0;
+  color: white;
+  overflow-x: hidden;
+}
+
+/*section"head"*/
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 800px;
+  padding: 100px 20vw;
+  border: solid 1px;
+}
+
+/*first-section*/
+
+.landing-page {
+  background-color: #0f0f10;
+}
+
+.--nav-- {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  border: solid 1px;
+  width: 600px;
+  }
+  
+  .--nav-- a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .--nav-- a:hover {
+    background-color: rgb(214, 153, 255);
+    color: black;
+  }
+
+/* Float Shadow */
+.h-f-s {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  }
+
+  .h-f-s:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+
+  .h-f-s:hover, .h-f-s:focus, .h-f-s:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+
+  .h-f-s:hover:before, .h-f-s:focus:before, .h-f-s:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+
+/*button*/
+.btn {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  font-size: 16px;
+  border-radius: 2px 2px 2px 2px;
+  outline: none;
+  background: #e9796a;
+  color: #fff;
+  cursor: pointer;
+}
+/*
+.one
+
+.two
+
+.three
+
+.four
+*/
+
+.column {
+  width: 32%;
+  padding: 5px;
+}
+
+/*second-section*/
+
+.about-us {
+  background-color: #0f0f10;
+}
+
+/*third-section*/
+
+.gallery {
+  background-color: #0f0f10;
+}
+
+/*fourth-section*/
+
+.contact-us {
+  background-color: #0f0f10;
+}
+
+/*fifth-section*/
+
+.footer {
+  background-color: #0f0f10;
+  min-height: 100px;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("Images/waves-.svg");
+}
+
+.layer2 {
+    background-image: url("Images/waves-.svg");
+}
+
+.flip {
+    transform: rotate(180deg);
+}
