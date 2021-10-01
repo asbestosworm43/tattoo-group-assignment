@@ -1,0 +1,15 @@
+body {
+    background-color: #001220;
+    color: white;
+}
+.wave {
+    max-width: 100%;
+}
+h2 {
+font-family: 'Rock Salt', cursive;
+/*font-family: 'Sedgwick Ave', cursive;*/
+}
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+}
