@@ -1,5 +1,15 @@
-* {
-  font-family: 'prompt', sans-serif;
+html {
+  scroll-behavior: smooth;
+}
+
+
+h1, h2, h4 {
+  font-family: 'Rock Salt', cursive;
+  /*font-family: 'Sedgwick Ave', cursive;*/
+}
+p, a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 1px;
 }
 
 body {
@@ -17,20 +27,19 @@ section {
   align-items: center;
   min-height: 800px;
   padding: 100px 20vw;
-  border: solid 1px;
+  border: solid 1px #000000;
 }
 
 /*first-section*/
 
 .landing-page {
-  background-color: #0f0f10;
+  background-color: #000000;
 }
 
 .--nav-- {
+  position: sticky;
   display: flex;
   justify-content: space-around;
-  overflow: hidden;
-  border: solid 1px;
   width: 600px;
   }
   
@@ -48,13 +57,18 @@ section {
     color: black;
   }
 
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+
 /* Float Shadow */
 .h-f-s {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px #2dca4b;
   position: relative;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -72,8 +86,8 @@ section {
     height: 10px;
     width: 90%;
     opacity: 0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(center, ellipse, #2dca4b 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, #2dca4b 0%, rgba(0, 0, 0, 0) 80%);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform, opacity;
@@ -101,20 +115,28 @@ section {
   font-size: 16px;
   border-radius: 2px 2px 2px 2px;
   outline: none;
-  background: #e9796a;
+  background-color: #2dca4b;
+background-image: linear-gradient(315deg, #2dca4b 0%, #233329 74%);
+
   color: #fff;
   cursor: pointer;
 }
+.btn-footer {
+  width: auto;
+}
 /*
-.one
+.one {
+  scroll-behavior: smooth;
+}
 
-.two
+.two {
+  scroll-behavior: smooth;
+}
 
-.three
-
-.four
+.three {
+  scroll-behavior: smooth;
+}
 */
-
 .column {
   width: 32%;
   padding: 5px;
@@ -123,42 +145,46 @@ section {
 /*second-section*/
 
 .about-us {
-  background-color: #0f0f10;
+  background-color: #000000;
 }
 
 /*third-section*/
 
 .gallery {
-  background-color: #0f0f10;
+  background-color: #000000;
 }
 
 /*fourth-section*/
 
 .contact-us {
-  background-color: #0f0f10;
+  background-color: #000000;
 }
 
 /*fifth-section*/
 
 .footer {
-  background-color: #0f0f10;
+  background-color: #000000;
   min-height: 100px;
 }
 
 .spacer {
+    z-index: 1;
     aspect-ratio: 960/300;
-    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .layer1 {
-    background-image: url("Images/waves-.svg");
+  margin-top: -1.5%;
+  margin-bottom: -1.5%;
+  background-image: url('.images/wave9.svg');
+ 
 }
 
 .layer2 {
-    background-image: url("Images/waves-.svg");
+    margin-top: -1%;
+    background-image: url('.images/wave10.svg');
 }
 
 .flip {
