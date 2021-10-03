@@ -1,15 +1,43 @@
-body {
-    background-color: #001220;
-    color: white;
+
+
+.card-contact {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
 }
-.wave {
-    max-width: 100%;
+
+.contact {
+    display: flex;
+    flex-direction: column;
 }
-h2 {
-font-family: 'Rock Salt', cursive;
-/*font-family: 'Sedgwick Ave', cursive;*/
+
+.label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase
 }
-p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    letter-spacing: 1px;
+
+.btn {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.placeholder {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.placeholder, .select {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.checkbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
