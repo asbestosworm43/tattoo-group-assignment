@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300
 &family=Rock+Salt&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;
+family=Raleway&amp;display=swap" rel="stylesheet">
     <title>FeSaTo Tattoo</title>
     <link rel="stylesheet" href="Styles/index.css">
 
@@ -18,34 +20,46 @@
 
         </nav>
     </header>
-    <section>
-        <h2>Home</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium corporis soluta minima assumenda
-        adipisci eum aperiam quidem obcaecati repellendus odit, iusto libero ex fuga eos neque et, rerum voluptatem.</p>
-        <img src="Images/Waves.png" alt="wave" class="wave">
 
-    </section>
-    <section>
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium corporis soluta minima assumenda
-        adipisci eum aperiam quidem obcaecati repellendus odit, iusto libero ex fuga eos neque et, rerum voluptatem.</p>
-        <img src="Images/Waves.png" alt="wave" class="wave">
+    <section class="card-contact">
 
-    </section>
-    <section>
-        <h2>Gallery</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium corporis soluta minima assumenda
-            adipisci eum aperiam quidem obcaecati repellendus odit, iusto libero ex fuga eos neque et, rerum voluptatem.</p>
-        <img src="Images/Waves.png" alt="wave" class="wave">
+        <form action="contact" class="contact">
+            <label for="name" class="label">Full name:</label>
+            <input type="name" class="placeholder" name="name" id="name" placeholder="Your name" required>
+        
+            <label for="password" class="label">Password:</label>
+            <input type="password" class="placeholder" name="password" id="password" placeholder="Enter your password" required minlength="8">
+        
+            <label for="email" class="label">Email:</label>
+            <input type="email" class="placeholder" name="email" id="email" placeholder="Enter your Email" required>
 
-    </section>
-    <section>
-        <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium corporis soluta minima assumenda
-            adipisci eum aperiam quidem obcaecati repellendus odit, iusto libero ex fuga eos neque et, rerum voluptatem.</p>
-        <img src="Images/Waves.png" alt="wave" class="wave">
+            <label for="message" class="label">Write a message:</label>
+            <textarea name="message" class="message" id="message" cols="30" rows="10" maxlength="500"></textarea>
 
+            <button type="submit" class="btn">Submit</button>
+
+            <label for="city" class="label">City:</label>
+            <select name="City" class="select" id="city">
+                <option value="choose" selected="">choose a city:</option>
+                <option value="stockholm">Stockholm</option>
+                <option value="helsingborg">Helsingborg</option>
+                <option value="linköping">Linköping</option>
+                <option value="malmö">Malmö</option>
+            </select>
+            <select name="Artist" class="select" id="artist">
+                <option value="choose" selected="">choose artist:</option>
+                <option value="sara">Sara</option>
+                <option value="torbjörn">Torbjörn</option>
+                <option value="felicia">Felicia</option>
+                <option value="surprise me">Surprise me!</option>
+            </select>
+            
+            <input type="checkbox" class="checkbox">
+
+        </form>
+    
     </section>
+
     <footer>
 
     </footer>
