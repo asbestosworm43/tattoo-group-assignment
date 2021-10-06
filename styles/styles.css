@@ -322,7 +322,10 @@ header {
   background-color: #000000;
   min-height: 100px;
 }
-
+.privacy {
+  color: #FFFFFF;
+  opacity: 25%;
+}
 .spacer {
     z-index: 1;
     aspect-ratio: 960/300;
