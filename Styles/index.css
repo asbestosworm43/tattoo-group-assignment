@@ -26,17 +26,19 @@ body {
 .btn {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 
 .btn:hover {
     background-color: #2dca4b;
     border-color: #2dca4b;
+    transition: all 0.6s ease-in-out; 
 }
 
 .placeholder:hover, .select:hover {
     border-color:  #2dca4b;
+    transition: all 0.6s ease-in-out;
 }
 
 .placeholder, .select {
@@ -49,7 +51,22 @@ body {
     border-color:  #2dca4b;
 }
 
+.checkbox-policy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    height: 18px;
+}
+
 .checkbox {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.policy {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 12px;
 }
