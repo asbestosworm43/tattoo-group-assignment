@@ -257,6 +257,88 @@ header {
   background-color: #000000;
 }
 
+body {
+  background-color: #000000;
+}
+
+.card-contact {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 11px;
+}
+
+.btn-contact {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  background-color: #2dca4b;
+  background-image: linear-gradient(315deg, #2dca4b 0%, #233329 74%);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.btn-contact:hover {
+  background-color: #2dca4b;
+  border-color: #2dca4b;
+  transition: all 0.6s ease-in-out; 
+}
+
+.placeholder:hover, .select:hover {
+  border-color:  #2dca4b;
+  transition: all 0.6s ease-in-out;
+}
+
+.placeholder, .select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.message:hover {
+  border-color:  #2dca4b;
+}
+
+.checkbox-policy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  height: 18px;
+}
+
+.checkbox {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.policy {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
 /*fifth-section*/
 
 .footer {
